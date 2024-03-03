@@ -14,7 +14,7 @@ class InsureMeApplicationTests {
 	
 	@Test
 	void testCreatePolicy() {
-		Policy policy = new Policy(1, "Shubham", "Individual" , 10000, "10-Sep-2021", "10-Sep-2022");
+		Policy policy = new Policy(1, "Sunil", "Individual" , 10000, "10-Sep-2023", "10-Sep-2099");
 		PolicyService pService = new PolicyService();
 		//Policy outputPolicy = pService.CreatePolicy();
 		assertEquals(policy.getPolicyId(), pService.generateDummyPolicy().getPolicyId());
